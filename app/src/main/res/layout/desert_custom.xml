@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="73dp"
+        android:text="choose ur desert?"
+        app:layout_constraintBottom_toTopOf="@+id/radiog2id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radiog2id"
+        android:layout_width="277dp"
+        android:layout_height="359dp"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintBottom_toTopOf="@+id/subid2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/cakeid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cake" />
+
+        <RadioButton
+            android:id="@+id/panid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pancakes" />
+
+        <RadioButton
+            android:id="@+id/icecreamid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ice cream" />
+
+        <RadioButton
+            android:id="@+id/chesseid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cheesecake" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/subid2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="124dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/canid2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/canid2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="124dp"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/subid2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
